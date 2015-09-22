@@ -45,6 +45,12 @@ public class CalculatorFinal{
 					System.out.println(""+(numberOne+numberTwo));
 					break;
 					
+					
+					
+				case '-': 
+					System.out.println(""+(numberOne-numberTwo));
+					break;
+					
 				case '*': 
 					System.out.println(""+(numberOne*numberTwo));
 					break;
@@ -63,12 +69,13 @@ public class CalculatorFinal{
 		} 
 
 	public static void main(String[] args) {
-		//CalculatorFinal cal = new CalculatorFinal(4,0);
+		//CalculatorFinal cal = new CalculatorFinal(4,0); 
 		CalculatorFinal calc = new CalculatorFinal();		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("nhap so a: ");
 		float a = sc.nextFloat();
-
+ 
+ 
 		System.out.println("nhap so b: ");
 		float b = sc.nextFloat();
 		calc.setNumberOne(a);
@@ -79,15 +86,15 @@ public class CalculatorFinal{
 			char operator = sc.nextLine().charAt(0);
 			if (cal.setOperator(operator)==true){
 				flag2 = true;
-			}
-			
-		}
-		
-		cal.result();
-		
-
-	}
-
-
-
-	}
+			} 
+			 
+		} 
+		 
+		cal.result(); 
+		 
+ 
+ 
+	} 
+ 
+ 
+	} 
