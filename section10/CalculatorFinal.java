@@ -1,9 +1,9 @@
 /*- Co 2 instance variable la  numberOne, numberTwo (float). Default gia tri la 0
-- Co 2 construction:  CalculatorFinal() va CalculatorFinal(numberOne, numberTwo)
-- numberOne, NumberTwo deu co method getter/setter
-- method setOperator(char operator)
-+ tra ve true neu operator dung, false neu sai
-- method result:  tra ve ket qua*/
++- Co 2 construction:  CalculatorFinal() va CalculatorFinal(numberOne, numberTwo)
++- numberOne, NumberTwo deu co method getter/setter
++- method setOperator(char operator)
+++ tra ve true neu operator dung, false neu sai
++- method result:  tra ve ket qua*/
 
 import java.util.*;
 public class CalculatorFinal{
@@ -12,7 +12,7 @@ public class CalculatorFinal{
 	private char operator;
 
 	public boolean setOperator(char operator){
-		
+	
 		if((operator=='+')||(operator=='-')||(operator=='*')||(operator=='/')){
 			this.operator=operator;
 			return true;
@@ -44,9 +44,7 @@ public class CalculatorFinal{
 				case '+': 
 					System.out.println(""+(numberOne+numberTwo));
 					break;
-					
-					
-					
+										
 				case '-': 
 					System.out.println(""+(numberOne-numberTwo));
 					break;
@@ -69,32 +67,27 @@ public class CalculatorFinal{
 		} 
 
 	public static void main(String[] args) {
-		//CalculatorFinal cal = new CalculatorFinal(4,0); 
-		CalculatorFinal calc = new CalculatorFinal();		
+		CalculatorFinal cal = new CalculatorFinal(4,0);
+		//CalculatorFinal calcu = new CalculatorFinal();
+
 		Scanner sc = new Scanner(System.in);
-		System.out.println("nhap so a: ");
-		float a = sc.nextFloat();
- 
- 
-		System.out.println("nhap so b: ");
-		float b = sc.nextFloat();
-		calc.setNumberOne(a);
-		calc.setNumberTwo(b);
 		boolean flag2=false;
 		while(flag2==false){
-			System.out.println("nhap phep tinh:");			
+			System.out.println("nhap phep tinh:");
+			
 			char operator = sc.nextLine().charAt(0);
+
 			if (cal.setOperator(operator)==true){
 				flag2 = true;
-			} 
-			 
-		} 
-		 
-		cal.result(); 
-		 
- 
- 
-	} 
- 
- 
-	} 
+			}
+			
+		}
+		
+		cal.result();
+		
+
+	}
+
+
+
+	}
