@@ -4,9 +4,11 @@ public class RandomNumber{
     
         List<Float> array = new ArrayList<Float>();
         List<Float> array2 = new ArrayList<Float>();
+        List<Float> array3 = new ArrayList<Float>();
         Scanner sc = new Scanner(System.in);
         Random rd = new Random();
         float tam1;
+        array3.addAll(array);
 
 
 //sinh so random                
@@ -17,7 +19,8 @@ public class RandomNumber{
             array.add(tam1);
         }
         System.out.println("\n\ndanh sach cac so duoc tao:\n"+array);
-        
+        array3.addAll(array);//copy array nay vao array3 de dung` o cau D 
+   
 
 //In ra so lon nhat cua day so        
         float max = array.get(0);
@@ -31,8 +34,7 @@ public class RandomNumber{
         
 
 //in ra thu tu giam dan
-        Collections.sort(array);
-         
+        Collections.sort(array);         
         int a=array.size();
         float[] motchieu= new float[a];
 
@@ -48,19 +50,19 @@ public class RandomNumber{
         for (int i=0;i<motchieu.length;i++){
             array2.add(motchieu[i]);    
         }         
-        System.out.println("\n\nC.thu tu giam dan cua day la:\n "+array2);
+        System.out.println("\n\nC.thu tu giam dan cua day la:\n"+array2);
 
           
  //nhap vao gia tri x va xoa cac so x co trong array
-        System.out.println("\nnhap vao 1 so bat ky de xoa");
+        System.out.println("\nD.nhap vao 1 so bat ky de xoa");
         float b = sc.nextFloat();
         List<Float> toRemove = new ArrayList<Float>();
-            for (int i=0; i<array.size();i++){
-                if(array.get(i)==b){
-                    array.remove(i);
+            for (int i=0; i<array3.size();i++){
+                if(array3.get(i)==b){
+                    array3.remove(i);
                 }
             }    
-        System.out.println("\n\nD.danh sach cac so sau khi xoa: "+array);
+        System.out.println("\n\ndanh sach cac so sau khi xoa: "+array3);
 
     }
 
