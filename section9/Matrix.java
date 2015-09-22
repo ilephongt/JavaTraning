@@ -63,3 +63,4 @@ class Matrix {
          System.out.println(array2);
 
     }
+}
