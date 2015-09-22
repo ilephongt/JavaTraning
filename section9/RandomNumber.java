@@ -3,14 +3,10 @@ public class RandomNumber{
     public static void main(String[] args){
     
         List<Float> array = new ArrayList<Float>();
-        List<Float> array2 = new ArrayList<Float>();
-        List<Float> array3 = new ArrayList<Float>();
         Scanner sc = new Scanner(System.in);
         Random rd = new Random();
         float tam;
         float tam2 = 0;
-        array3.addAll(array);
-        
 
 //sinh so random                
         System.out.println("A.ban muon random bao nhieu so?");
@@ -25,7 +21,7 @@ public class RandomNumber{
             array.add(tam);
         }
         System.out.println("\n\ndanh sach cac so duoc tao:\n"+array);
-        array3.addAll(array);//copy array nay vao array3 de dung` o cau D 
+    
    
 
 //In ra so lon nhat cua day so        
