@@ -34,12 +34,6 @@ public class Time{
 		return this.second;
 	}
 
-	//public int Time(int gio, int phut, int giay){
-	//	gio = hour;
-	//	phut = minute;
-	//	giay = second;
-	//}
-
 	public int addMin(int amount){
 		minute = minute + amount;
 		return minute;
@@ -86,14 +80,10 @@ public class Time{
 		return "Hour:" +this.hour + "     Minute:" +this.minute+"     Second:" +this.second+"\n";
 	}
 
-
-
 	public static void main(String[] args) {
 		
 		Time thoigian = new Time();
 		Scanner sc = new Scanner(System.in);
-
-
 
 		System.out.println("nhap gio:");
 		int hour = sc.nextInt();
@@ -115,10 +105,5 @@ public class Time{
 		thoigian.addMin(amount);
 		thoigian.standardize();
 		System.out.println("thoi gian sau khi duoc cong them:\n"+thoigian.toString());
-
-
-
 	}
-
-
 }
