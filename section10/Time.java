@@ -7,7 +7,7 @@
 - method standardize: tinh toan lai  hour, minute,  second theo quy tac sau
 + second < 60,  neu lon hon thi chuyen sang minute 1 phan sao cho    1 minute = 60second  (vi du  60 seconds =>  59s + 1m)
 + minute < 60,   neu lon hon thi chuyen sang hour 1 phan sao cho    1hour = 60minute
-- method toString:  in ra dien ta cho class nhu sau:    “Hour: <hour> | Minute: <minute> | Second: <second>”*/
+- method toString:  in ra dien ta cho class nhu sau:    Hour: <hour> | Minute: <minute> | Second: <second>*/
 
 import java.util.*;
 public class Time{
@@ -40,26 +40,14 @@ public class Time{
 	}
 	public int standardize(){
 		while(second>60){
-			int dem = 0;
 			second = second-60;
-			dem++;
 			minute++;
 		}
 
 		while(minute>60){
-			int dem = 0;
 			minute = minute-60;
-			dem++;
 			hour++;
 		}
-
-		while(hour>24){
-			int dem = 0;
-			hour = hour-24;
-			dem++;
-		}
-
-
 		if (second==60){
 			second=0;
 			minute++;
@@ -68,9 +56,7 @@ public class Time{
 			minute=0;
 			hour++;
 		}
-		if (hour==24){
-			hour=0;
-		}
+	
 		return hour+minute+second;
 		
 	}
