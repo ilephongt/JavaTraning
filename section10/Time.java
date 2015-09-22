@@ -112,7 +112,7 @@ public class Time{
 
 		System.out.println("nhap so phut duoc cong them:");
 		int amount = sc.nextInt();
-		thoigian.addMin(amount).standardize();
+		thoigian.addMin(amount);
 		thoigian.standardize();
 		System.out.println("thoi gian sau khi duoc cong them:\n"+thoigian.toString());
 
