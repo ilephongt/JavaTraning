@@ -22,6 +22,10 @@ public class CalculatorFinal{
 
 	public CalculatorFinal(){
 		
+	}
+	public  CalculatorFinal(float a, float b){
+		a = numberOne;
+		b = numberTwo;
 	} 
 
 	public void setNumberOne(float numberOne){
