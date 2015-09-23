@@ -10,18 +10,18 @@
 - method toString:  in ra dien ta cho class nhu sau:    Hour: <hour> | Minute: <minute> | Second: <second>*/
 
 import java.util.*;
-public class Time{
+public class Timer{
 	private float hour;
 	private float minute;
 	private float second;
 
-	public Time(float a, float b, float c){
+	public Timer(float a, float b, float c){
 		hour = a;
 		minute = b;
 		second = c;
 
 	}
-	public Time(){
+	public Timer(){
 
 	}
 	public void setHour(float hour){
@@ -69,20 +69,19 @@ public class Time{
 
 	public static void main(String[] args) {
 		
-		Time thoigian = new Time();
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("nhap gio:");
 		float hour = sc.nextFloat();
-		thoigian.setHour(hour);
+	
 
 		System.out.println("nhap phut:");
 		float minute = sc.nextFloat();
-		thoigian.setMinute(minute);
+		
 
 		System.out.println("nhap giay:");
 		float second = sc.nextFloat();
-		thoigian.setSecond(second);
+		Timer thoigian = new Timer(hour, minute, second);
 
 		thoigian.standardize();
 		System.out.print("thoi gian hien tai:\t"+thoigian.toString());
