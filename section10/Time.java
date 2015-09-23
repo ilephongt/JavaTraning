@@ -39,24 +39,16 @@ public class Time{
 		return minute;
 	}
 	public int standardize(){
-		while(second>60){
+		while(second>59){
 			second = second-60;
 			minute++;
 		}
 
-		while(minute>60){
+		while(minute>59){
 			minute = minute-60;
 			hour++;
 		}
-		if (second==60){
-			second=0;
-			minute++;
-		}
-		if (minute==60){
-			minute=0;
-			hour++;
-		}
-	
+		
 		return hour+minute+second;
 		
 	}
