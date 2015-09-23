@@ -37,7 +37,7 @@ public class CalculatorFinal{
 		return this.numberTwo;
 	}
 
-	public void solution(){
+	public float result(){
 			
 			switch(operator){
 				case '+': 
@@ -56,9 +56,7 @@ public class CalculatorFinal{
 					ketqua=numberOne/numberTwo;
 					break;
 			}
-		}
-
-	public float result(){
+		
 		return this.ketqua;
 	}
 
@@ -85,20 +83,20 @@ public class CalculatorFinal{
 			}
 		}
 		switch(operator){
-			case '+': cal.solution();
+			case '+': 
 					  System.out.println("ket qua = "+cal.result());
 					  break;
-			case '-': cal.solution();
+			case '-': 
 					  System.out.println("ket qua = "+cal.result());
 					  break;
-			case '*': cal.solution();
+			case '*': 
 					  System.out.println("ket qua = "+cal.result());
 					  break;
 			case '/': if (b==0){
 						System.out.println("ko chia dc");
 					  }
 					  else{
-						  cal.solution();
+						  
 					 	  System.out.println("ket qua = "+cal.result());
 					 	  break;
 					}
