@@ -48,12 +48,12 @@ public class Time{
 		return minute;
 	}
 	public float standardize(){
-		while(second>59){
+		while(second>=60){
 			second = second-60;
 			minute++;
 		}
 
-		while(minute>59){
+		while(minute>60){
 			minute = minute-60;
 			hour++;
 		}
