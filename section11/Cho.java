@@ -4,6 +4,7 @@ public class Cho extends GiaSuc{
 		System.out.println("cho co the di");
 	}
 	public void bay(){
+		super.bay();
 		System.out.println("cho khong bay duoc");
 	}
 	public void boi(){
