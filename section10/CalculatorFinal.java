@@ -24,8 +24,8 @@ public class CalculatorFinal{
 		
 	}
 	public  CalculatorFinal(float a, float b){
-		a = numberOne;
-		b = numberTwo;
+		numberOne = a;
+		numberTwo = b;
 	} 
 
 	public void setNumberOne(float numberOne){
