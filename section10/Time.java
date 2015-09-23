@@ -11,34 +11,43 @@
 
 import java.util.*;
 public class Time{
-	private int hour;
-	private int minute;
-	private int second;
+	private float hour;
+	private float minute;
+	private float second;
 
-	public void setHour(int hour){
+	public Time(float a, float b, float c){
+		hour = a;
+		minute = b;
+		second = c;
+
+	}
+	public Time(){
+
+	}
+	public void setHour(float hour){
 		this.hour = hour;
 	}
-	public void setMinute(int minute){
+	public void setMinute(float minute){
 		this.minute = minute;
 	}
-	public void setSecond(int second){
+	public void setSecond(float second){
 		this.second = second;
 	}
-	public int getSecond(){
+	public float getSecond(){
 		return this.second;
 	}
-	public int getMinute(){
+	public float getMinute(){
 		return this.second;
 	}
-	public int getHour(){
+	public float getHour(){
 		return this.second;
 	}
 
-	public int addMin(int amount){
+	public float addMin(float amount){
 		minute = minute + amount;
 		return minute;
 	}
-	public int standardize(){
+	public float standardize(){
 		while(second>59){
 			second = second-60;
 			minute++;
@@ -64,15 +73,15 @@ public class Time{
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("nhap gio:");
-		int hour = sc.nextInt();
+		float hour = sc.nextFloat();
 		thoigian.setHour(hour);
 
 		System.out.println("nhap phut:");
-		int minute = sc.nextInt();
+		float minute = sc.nextFloat();
 		thoigian.setMinute(minute);
 
 		System.out.println("nhap giay:");
-		int second = sc.nextInt();
+		float second = sc.nextFloat();
 		thoigian.setSecond(second);
 
 		thoigian.standardize();
