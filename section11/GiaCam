@@ -1,0 +1,18 @@
+public class GiaCam extends Animal{
+	public void di(){
+		//super.di();
+		//System.out.println("GiaCam co the di");
+	}
+	public void bay(){
+		//super.bay();
+		//System.out.println("GiaCam co the bay");
+	}
+	public void boi(){
+		//super.boi();
+		//System.out.println("GiaCam co the boi");
+	}
+	public void gioiThieu(){
+		//super.gioiThieu();
+		//System.out.println("ta la Gia Cam");
+	}
+}
