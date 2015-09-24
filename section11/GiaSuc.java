@@ -1,16 +1,15 @@
-public class GiaSuc extends Animal{
+class GiaSuc extends Animal{
 	public void di(){
-		//super.di();
-		//System.out.println("GiaSuc co the di");
+		System.out.println("co the di");
+	}
+	public void bay(){
+		System.out.println("khong bay duoc");
 	}
 	public void boi(){
-		//super.boi();
-		//System.out.println("GiaSuc co the boi");
+		System.out.println("co the boi");
 	}
  	public void gioiThieu(){
- 		//super.gioiThieu();
- 		//System.out.println("Ta la gia suc");
+ 		System.out.println("Ta la gia suc");
  	}
 }
-
 
