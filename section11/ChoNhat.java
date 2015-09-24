@@ -1,18 +1,18 @@
-public class ChoNhat extends Cho{
+ class ChoNhat extends Cho{
 	public void di(){
-		super.di();
-		System.out.println("cho Nhat co the di");
+		
+		System.out.println("co the di");
 	}
 	public void bay(){
-		super.bay();
-		System.out.println("cho Nhat khong bay duoc");
+		
+		System.out.println("khong bay duoc");
 	}
 	public void boi(){
-		super.boi();
-		System.out.println("cho Nhat co the boi");
+	
+		System.out.println("co the boi");
 	}
 	public void gioiThieu(){
-		super.gioiThieu();
+	
 		System.out.println("ta la Cho Nhat");
 	}
 }
