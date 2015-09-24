@@ -9,21 +9,21 @@
 Ví dụ:  “cho co the di"
 - method gioiThieu: “Ta la <X>"
 */
-
-class Animal{
-
+public class Animal{
 	
 	public void di(){
-		//System.out.println("dong vat co the di");
+		System.out.println("co the di");
 	}
 	public void bay(){
-		//System.out.println("dong vat co the bay");
+		System.out.println("co the bay");
 	}
 	public void boi(){
-		//System.out.println("dong vat co the boi");
+		System.out.println("co the boi");
 	}
 	public void gioiThieu(){
-		//System.out.println("ta la dong vat");
+		System.out.println("dong vat");
 	}	
 }
+
+ 
 
