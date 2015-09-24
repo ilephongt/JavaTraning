@@ -1,18 +1,16 @@
-public class Cho extends GiaSuc{
+ class Cho extends GiaSuc{
+
+
 	public void di(){
-		super.di();
-		System.out.println("cho co the di");
+		System.out.println("co the di");
 	}
 	public void bay(){
-		super.bay();
-		System.out.println("cho khong bay duoc");
+		System.out.println("khong bay duoc");
 	}
 	public void boi(){
-		super.boi();
-		System.out.println("cho co the boi");
+		System.out.println("co the boi");
 	}
 	public void gioiThieu(){
-		super.gioiThieu();
 		System.out.println("ta la cho");
 	}
 }
