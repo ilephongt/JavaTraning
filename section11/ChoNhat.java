@@ -1,20 +1,17 @@
- class ChoNhat extends Cho{
-	public void di(){
-		
-		System.out.println("co the di");
+class ChoNhat extends Cho{
+	private String name = "CHO NHAT";
+
+	public void di(){	
+		System.out.println(name+" co the di");
 	}
 	public void bay(){
-		
-		System.out.println("khong bay duoc");
+		System.out.println(name+" khong bay duoc");
 	}
 	public void boi(){
-	
-		System.out.println("co the boi");
+		System.out.println(name+" co the boi");
 	}
-	public void gioiThieu(){
-	
-		System.out.println("ta la Cho Nhat");
-	}
+ 	public void gioiThieu(){
+ 		System.out.println("Ta la "+name);
+ 	}
 }
-
 
