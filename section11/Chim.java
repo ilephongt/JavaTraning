@@ -1,19 +1,15 @@
-public class Chim extends GiaCam{
+ class Chim extends GiaCam{
 	public void di(){
-		super.di();
-		System.out.println("chim co the di");
+		System.out.println("co the di");
 	}
 	public void bay(){
-		super.bay();
-		System.out.println("Chim co the bay");
+		System.out.println("co the bay");
 	}
 	public void boi(){
-		super.boi();
-		System.out.println("chim co the boi");
+		System.out.println("co the boi");
 	}
 
 	public void gioiThieu(){
-		super.gioiThieu();
 		System.out.println("ta la Chim");
 	}
 }
