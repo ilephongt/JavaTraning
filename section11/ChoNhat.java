@@ -4,6 +4,7 @@ public class ChoNhat extends Cho{
 		System.out.println("cho Nhat co the di");
 	}
 	public void bay(){
+		super.bay();
 		System.out.println("cho Nhat khong bay duoc");
 	}
 	public void boi(){
