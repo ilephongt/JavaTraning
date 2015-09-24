@@ -1,18 +1,14 @@
-public class Bo extends GiaSuc{
+ class Bo extends GiaSuc{
 	public void di(){
-		super.action();
-		System.out.println("Bo co the di");
+		System.out.println("co the di");
 	}
 	public void bay(){
-		super.bay();
-		System.out.println("bo khong the bay");
+		System.out.println("khong the bay");
 	}
 	public void boi(){
-		super.boi();
-		System.out.println("bo khong the boi");
+		System.out.println("khong the boi");
 	}
 	public void gioiThieu(){
-		super.gioiThieu();
 		System.out.println("ta la Bo");
 	}
 }
