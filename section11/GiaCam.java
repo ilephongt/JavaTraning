@@ -1,18 +1,17 @@
- class GiaCam extends Animal{
-	public void di(){
-		//super.di();
-		System.out.println("co the di");
+class GiaCam extends Animal{
+	private String name = "GIA CAM";
+	
+	public void di(){	
+		System.out.println(name+" co the di");
 	}
 	public void bay(){
-		//super.bay();
-		System.out.println("co the bay");
+		System.out.println(name+" co the bay");
 	}
 	public void boi(){
-		//super.boi();
-		System.out.println("co the boi");
+		System.out.println(name+" co the boi");
 	}
-	public void gioiThieu(){
-		//super.gioiThieu();
-		System.out.println("ta la Gia Cam");
-	}
+ 	public void gioiThieu(){
+ 		System.out.println("Ta la "+name);
+ 	}
 }
+
