@@ -1,17 +1,14 @@
-public class Meo extends GiaSuc{
+ class Meo extends GiaSuc{
 	public void di(){
-		super.di();
-		System.out.println("meo co the di");
+		System.out.println("co the di");
 	}
 	public void bay(){
-		System.out.println("meo khong bay duoc");
+		System.out.println("khong bay duoc");
 	}
 	public void boi(){
-		super.boi();
-		System.out.println("meo khong the boi");
+		System.out.println("khong the boi");
 	}
 	public void gioiThieu(){
-		super.gioiThieu();
 		System.out.println("ta la meo");
 	}
 }
