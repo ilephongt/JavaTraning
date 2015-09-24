@@ -1,14 +1,17 @@
- class Vit extends GiaCam{
-	public void di(){
-		System.out.println("co the di");
+class Vit extends GiaCam{
+	private String name = "VIT";
+	
+	public void di(){	
+		System.out.println(name+" co the di");
 	}
 	public void bay(){
-		System.out.println("khong the bay");
-	}	
+		System.out.println(name+" khong bay duoc");
+	}
 	public void boi(){
-		System.out.println("co the boi");
+		System.out.println(name+" co the boi");
 	}
-	public void gioiThieu(){
-		System.out.println("ta la vit");
-	}
+ 	public void gioiThieu(){
+ 		System.out.println("Ta la "+name);
+ 	}
 }
+
