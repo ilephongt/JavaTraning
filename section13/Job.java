@@ -64,14 +64,27 @@
 
  	
  	public void menu(){
- 		System.out.println("-----------------------------------------------
- 							\nMenu:
- 							\n1. Bo sung cong viec moi.
- 							\n2. Hien thi danh sach cong viec.
- 							\n3. Xoa 1 cong viec.\n4. Thoat.
- 							\nHay cho biet lua chon cua ban.
- 							\n-----------------------------------------------");
+ 		System.out.println("-----------------------------------------------\nMenu:\n1. Bo sung cong viec moi.\n2. Hien thi danh sach cong viec.\n3. Xoa 1 cong viec.\n4. Thoat.\nHay cho biet lua chon cua ban.\n-----------------------------------------------");
  	}
+
+
+ 	/*public void ReadFile(String fileName) throws {
+ 		private static void readUsingFiles(String fileName) throws IOException {
+        Path path = Paths.get(fileName);
+        // read file to byte array
+        byte[] bytes = Files.readAllBytes(path);
+        // read file to String list
+        List<String> allLines = Files
+                .readAllLines(path, StandardCharsets.UTF_8);
+        for (String line : allLines) {
+            System.out.println(line);
+        }
+    }
+
+ 		
+ 	}
+
+ */
 
 	public static void main(String[] args) {
 		try{
