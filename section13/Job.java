@@ -64,7 +64,13 @@
 
  	
  	public void menu(){
- 		System.out.println("-----------------------------------------------\nMenu:\n1. Bo sung cong viec moi.\n2. Hien thi danh sach cong viec.\n3. Xoa 1 cong viec.\n4. Thoat.\nHay cho biet lua chon cua ban.\n-----------------------------------------------");
+ 		System.out.println("-----------------------------------------------
+ 							\nMenu:
+ 							\n1. Bo sung cong viec moi.
+ 							\n2. Hien thi danh sach cong viec.
+ 							\n3. Xoa 1 cong viec.\n4. Thoat.
+ 							\nHay cho biet lua chon cua ban.
+ 							\n-----------------------------------------------");
  	}
 
 	public static void main(String[] args) {
