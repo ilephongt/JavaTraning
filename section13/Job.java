@@ -68,37 +68,9 @@
  	}
 
 
- 	/*public void ReadFile(String fileName) throws {
- 		private static void readUsingFiles(String fileName) throws IOException {
-        Path path = Paths.get(fileName);
-        // read file to byte array
-        byte[] bytes = Files.readAllBytes(path);
-        // read file to String list
-        List<String> allLines = Files
-                .readAllLines(path, StandardCharsets.UTF_8);
-        for (String line : allLines) {
-            System.out.println(line);
-        }
-    }
-
- 		
- 	}
-
- */
 
 	public static void main(String[] args) {
-		try{
- 			File file = new File("danhsach.txt");
- 			if(file.createNewFile()){
- 				System.out.println("Tao file thanh cong!");
- 			}else{
- 				System.out.println("Da ton tai file nay truoc do!");
- 			}
- 		}catch (IOException e){
- 			e.printStackTrace();
- 		}
-
-
+		
 		Scanner sc = new Scanner(System.in);
 		Job w = new Job();
 		boolean flag = false;
