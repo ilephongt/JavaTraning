@@ -2,26 +2,29 @@ import java.io.*;
 import java.util.*;
 public class JobList{
   static String fileName = "danhsach.txt";
- 
+  
+
 
   static String menu(){
-    String choice;    
+    String choice;
+    
     Scanner input = new Scanner(System.in);
     System.out.println("================================================\nMenu\n1.add job\n2.display job\n3.remove a job\n4.quit program\nenter your choice:");
-      choice =input.nextLine();  
+    
+     choice =input.nextLine();
+     
       return choice;
   }
 
 
-
   static void show(){
-   
+
+    System.out.println("Job List:");
     try{
-      System.out.println("Job List:");
       Scanner inFile = new Scanner(new FileReader(fileName));
       BufferedReader br = new BufferedReader(new FileReader(fileName));     
       if (br.readLine() == null) {
-          System.out.println("File is empty now!");
+    System.out.println("File is empty now");
       }else{
 
       String line;
@@ -42,8 +45,6 @@ public class JobList{
 
   }
 
-
-
   static void add(){
     try{
       Scanner input = new Scanner(System.in);
@@ -58,23 +59,19 @@ public class JobList{
     
   }
 
-
-
   static void remove(){
     int choice;
     show();
-    Scanner input = new Scanner(System.in); 
+    Scanner input = new Scanner(System.in);
+  
     ArrayList<String> items = new ArrayList<String>();
     int number = 1;
     boolean flag2= false;
 
     try{
       Scanner inFile = new Scanner(new FileReader(fileName));
-      BufferedReader br = new BufferedReader(new FileReader(fileName));   
-      PrintWriter outFile = new PrintWriter(new FileWriter(fileName));
-  
-      if(br.readLine()==null){
-        System.out.println("please add new job first!");
+      BufferedReader br = new BufferedReader(new FileReader(fileName));     
+        if(br.readLine()==null){System.out.println("please add new job!");
       }else{
             do{
               try{
@@ -90,6 +87,7 @@ public class JobList{
                         items.remove(choice);
                         System.out.println("done!");
                         flag2=true;
+                        PrintWriter outFile = new PrintWriter(new FileWriter(fileName));
                         for(int i = 0; i<items.size(); i++){
                             outFile.println(items.get(i));
                         }
@@ -109,8 +107,7 @@ public class JobList{
     }
         
   }
-
- public static void main(String[] args) throws IOException{
+  public static void main(String[] args) throws IOException{
     boolean flag = false;
     String menuItem ;
     do{
@@ -137,5 +134,4 @@ public class JobList{
     } 
     while(flag == false);
   }
-
 }
